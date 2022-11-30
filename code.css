@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding-top: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+
+
+.section1{
+	display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-content: center;
+}
+ .section1 ul{
+    	float: left;
+ }
+ .section1 ul li ul{
+ 	    display: none;
+    position: absolute;
+    padding: 5px;
+    border-radius: 4px;
+    transition: 0.5s;
+ }
+ .section1 ul li:hover ul {
+    display: block;
+}
+.section1 ul li ul li{
+	width: 70px;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+.section1 ul li ul li a {
+    padding: 8px 0px;
+}
+.section1 ul li ul li a:hover {
+    background-color: #2b2e33;
+}
+.header {
+    text-align: center;
+    font-size: 50px;
+    color: black;
+    background-image: url(photos/banner.png);
+    min-height: 100vh;
+    width: 100%;
+    height: 1%;
+    background-position: center;
+    position: relative;
+    background-size: cover;
+    backface-visibility: hidden;
+    color: white;
+    position: relative;
+    isolation: isolate;
+}
+.header::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: black;
+    opacity: .7;
+}
+.header1 {
+	    float: left;
+    list-style: none;
+    position: relative;
+}
+.header1:after{
+	 content: '';
+    width: 0%;
+    height: 1px;
+    background: #f44336;
+    display: inline-block;
+    margin: auto;
+    transition: 0.5s;
+}
+.header1:hover:after{
+    width: 80%;
+    transition: 0.5s;
+}
+.buttonpack {
+	display: block;
+    color: black;
+    font-size: 13px;
+    padding: 22px 16px;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+}
+
